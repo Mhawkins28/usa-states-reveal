@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Name the States</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>How many states can we name?</h1>
+    <div class="score"><span id="count">0</span> / 50</div>
+  </header>
+
+  <div id="banner" aria-live="polite">Click a state to reveal its name</div>
+
+  <main>
+    <svg id="map" viewBox="-10 -10 1110 630" role="img" aria-label="Map of the United States"></svg>
+    <div id="legend" hidden>
+      <span class="key ne">Northeast</span>
+      <span class="key mw">Midwest</span>
+      <span class="key so">South</span>
+      <span class="key we">West</span>
+    </div>
+  </main>
+
+  <footer>
+    <button id="btn-regions" type="button">Show regions</button>
+    <button id="btn-all" type="button">Reveal all</button>
+    <button id="btn-reset" type="button">Reset</button>
+    <span class="hint">Click a state again to hide it</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
